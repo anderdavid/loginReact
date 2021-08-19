@@ -1,16 +1,14 @@
 import React from 'react';
+import { FaEnvelope, FaUser } from 'react-icons/fa';
 
 export default function Login() {
   return (
     <div>
-      <span class="icon">
-        <i class="fas fa-home"></i>
-      </span>
       <div className="field">
         <p className="control has-icons-left has-icons-right">
           <input className="input" type="email" placeholder="Email" />
           <span className="icon is-small is-left">
-            <i className="fas fa-envelope"></i>
+            <FaEnvelope size={18} color={'#616170'} />
           </span>
           <span className="icon is-small is-right">
             <i className="fas fa-check"></i>
@@ -21,7 +19,7 @@ export default function Login() {
         <p className="control has-icons-left">
           <input className="input" type="password" placeholder="Password" />
           <span className="icon is-small is-left">
-            <i className="fas fa-lock"></i>
+            <FaUser size={18} color={'#616170'} />
           </span>
         </p>
       </div>

@@ -1,7 +1,8 @@
 import React from 'react';
-import Login from './components/login';
+/* import Login from './components/login'; */
 import { Provider } from 'react-redux';
 import Peliculas from './components/Peliculas';
+import Login from './pages/Login';
 import { store } from './store/configureStore';
 
 function App() {
@@ -10,7 +11,8 @@ function App() {
       {/*  <div>
         <Login></Login>
       </div> */}
-      <Peliculas />
+      {/*    <Peliculas /> */}
+      <Login></Login>
     </Provider>
   );
 }

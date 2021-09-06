@@ -2,6 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import image from '../assets/img/background.jpg';
 import Card from '../components/layout/Card';
+import EmailInput from '../components/Inputs/EmailInput';
+import PasswordInput from '../components/Inputs/PasswordInput';
+import SubmitButton from '../components/Inputs/SubmitButton';
 
 const Background = styled.div`
   background-image: url(${image});
@@ -29,16 +32,10 @@ export default function Login() {
     <Background>
       <MainContainer>
         <Card>
-          <div className="Background-form">
-            <div className="form-control-Background">
-              <span>Email</span>
-              <input type="email" placeholder="username" />
-            </div>
-            <div className="form-control-Background">
-              <span>Password</span>
-              <input type="password" placeholder="password" />
-            </div>
-          </div>
+          <h1>Login:</h1>
+          <EmailInput />
+          <PasswordInput />
+          <SubmitButton label={'Login'} />
         </Card>
       </MainContainer>
     </Background>

@@ -1,6 +1,6 @@
 export const API_URL = process.env.REACT_APP_API_URL;
 
- export const PAGINATION = {
+export const PAGINATION = {
   results: [],
   pages: 0,
   current: 0,
@@ -15,15 +15,7 @@ export const REQUEST_STATUSES = {
   FAILED: 'failed'
 };
 /*
-export const REGEX = {
-  EMAIL: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i,
-  PASSWORD: /^(?=.*[0-9])(?=.*[A-zñ!@#$%^&*])([A-z0-9ñ!@#$%^&*]+)$/,
-  NUMERIC: /^[0-9]+$/,
-  CELLPHONE: /^(\+)?[0-9]+$/,
-  CURRENCY: /^[0-9,.]+$/,
-  ALPHANUMERIC: /^[0-9A-z]+$/,
-  VERIFICATION_CODE: /^\d{0,3}[A-Z]{0,1}$/
-};
+
 
 export const COLORS = {
   error: '#ea172a',

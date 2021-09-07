@@ -2,9 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import image from '../assets/img/background.jpg';
 import Card from '../components/layout/Card';
-import EmailInput from '../components/Inputs/EmailInput';
-import PasswordInput from '../components/Inputs/PasswordInput';
-import SubmitButton from '../components/Inputs/SubmitButton';
+import LoginForm from './LoginForm';
 
 const Background = styled.div`
   background-image: url(${image});
@@ -33,9 +31,9 @@ export default function Login() {
       <MainContainer>
         <Card>
           <h1>Login:</h1>
-          <EmailInput />
-          <PasswordInput />
-          <SubmitButton label={'Login'} />
+          <LoginForm
+            onSubmit={(payload) => alert('onSubmit' + JSON.stringify(payload))}
+          />
         </Card>
       </MainContainer>
     </Background>
